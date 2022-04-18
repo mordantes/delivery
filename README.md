@@ -14,8 +14,8 @@
 ## Scripts
  > ### dev - npm run dev (with nodemon)
  > ### test - npm t
- > ### build- npm run build (./build)
- > ### start- npm run start (./build/index.js)
+ > ### build - npm run build (./build)
+ > ### start - npm run start (./build/index.js)
 
 ## .ENV file specs 
 - ### MONGO_USER 
