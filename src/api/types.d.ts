@@ -5,9 +5,7 @@ export interface ApiResponse {
 	reviews: HashedReview[]
 	total: number
 }
-
-
-export interface Review {
+interface Review {
 	author : string
 	body: string
 	icon: string
@@ -15,7 +13,7 @@ export interface Review {
 	answers: Answer[]
 }
 
-interface HashedReview extends Review{
+export interface HashedReview extends Review{
 	authorHash : string
 	answerHash : string
 }
@@ -26,16 +24,10 @@ interface Answer{
 	statusId: string
 }
 
-
 export interface RouteProps {
 	req: Request
 	res: Response
 }
-export interface ScrapeResult {
-	 finded : number
-}
-
-
 export interface QueryParams {
 	take : string
 	offset: string

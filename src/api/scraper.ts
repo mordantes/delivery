@@ -1,6 +1,6 @@
 import { GetReview } from "./get-review";
-import { QueryParams, RouteProps, ScrapeResult } from "./types";
-import { CollectAndUpdate } from "./update";
+import { QueryParams, RouteProps } from "./types";
+import { collectAndUpdate } from "./update";
 
 class Scraper {
 	// is private to hide it from other functions
@@ -15,7 +15,7 @@ class Scraper {
 			// set val to true
 			this.isWork = true
 			// start collecting
-			CollectAndUpdate(this.isWork)
+			collectAndUpdate(this.isWork)
 		}
 		// return message
 		return res.json({statusCode : 102, message: 'Already in work'})

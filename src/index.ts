@@ -23,8 +23,8 @@ server.get('/result',
 	[
 		checkQuery('take', 'take parameter should be a number').isNumeric(),
 		checkQuery('offset', 'offset parameter should be a number').isNumeric(),
-		checkQuery('orderBy', 'orderBy parameter should be a rated, icon or author').isIn(['rated', 'icon', 'author']),
-		checkQuery('dir', 'dir parameter should be a 1 or -1 ').exists().bail().isIn([-1, 1]),
+		checkQuery('orderBy', 'orderBy parameter should be equals to - rated, icon or author').isIn(['rated', 'icon', 'author']),
+		checkQuery('dir', 'dir parameter should be equals to a 1 or -1 ').exists().bail().isIn([-1, 1]),
 	]
 , (req: Request, res : Response) =>{
 	try{

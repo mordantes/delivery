@@ -11,7 +11,15 @@
 		dir - orderBy direction (1 , -1 );
 
 
+## .ENV file specs 
+- ### MONGO_USER 
+- ### MONGO_PWD 
+- ### MONGO_DB (name)
+- ### API_URL = https://api.delivery-club.ru/api1.2/reviews currently used
+- ### CHUNK = 1000  (currently used)
 
 
-### WARN - Swagger docs not implemented now.
+
+
+## WARN - Swagger docs not implemented now.
 

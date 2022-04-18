@@ -7,7 +7,7 @@ export const reduceURI = (total: number)=>{
 	try{
 		const uri:string[] =[]
 		const chunks = SplitChunks(total-10)
-		for (let i = 0; i<(chunks+1); i++){
+		for (let i = 0; i<chunks; i++){
 			const amount = parseInt(Configstore('CHUNK') as string)
 			const currentURI = ApiURL(amount, (i*amount)+10)
 			uri.push(currentURI)
