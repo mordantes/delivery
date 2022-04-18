@@ -1,4 +1,4 @@
-import { ApiURL } from "./api-url"
+import { generateURl } from "./api-url"
 import { Configstore } from "./configstore"
 import { SplitChunks } from "./split-chunks"
 
@@ -9,7 +9,7 @@ export const reduceURI = (total: number)=>{
 		const chunks = SplitChunks(total-10)
 		for (let i = 0; i<chunks; i++){
 			const amount = parseInt(Configstore('CHUNK') as string)
-			const currentURI = ApiURL(amount, (i*amount)+10)
+			const currentURI = generateURl({ limit: amount, offset: (i*amount)+10})
 			uri.push(currentURI)
 		}
 		return uri

@@ -11,6 +11,12 @@
 		dir - orderBy direction (1 , -1 );
 
 
+## Scripts
+ > ### dev - npm run dev (with nodemon)
+ > ### test - npm t
+ > ### build- npm run build (./build)
+ > ### start- npm run start (./build/index.js)
+
 ## .ENV file specs 
 - ### MONGO_USER 
 - ### MONGO_PWD 
